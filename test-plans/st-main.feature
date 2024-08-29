@@ -8,7 +8,7 @@ Feature: Testar interações principais no site Super Troco
   Scenario: Clicar em "Continuar" com o campo de Data de Nascimento inválido - geral
     Given que o usuário está na página inicial do site
     When o usuário clica no botão "CADASTRE-SE"
-    And o usuário preenche o campo de CPF com "82576500056"
+    And o usuário preenche o campo de CPF com um CPF válido
     And o usuário clica no botão "Continuar"
     And o usuário preenche o campo de Data de Nascimento com "11111111"
     And o usuário clica no botão "Continuar"
@@ -16,7 +16,7 @@ Feature: Testar interações principais no site Super Troco
 
   Scenario: Pesquisar com o campo "batendo a cabeça no teclado"
     Given que o usuário está na página inicial do site
-    When o usuário preenche o campo de pesquisa com "hdfiughidfhgi"
+    When o usuário preenche o campo de pesquisa com caracteres aleatorios
     And o usuário clica no botão "Buscar"
     Then o elemento com a classe "box-no-items" deve estar visível
 
@@ -30,7 +30,7 @@ Feature: Testar interações principais no site Super Troco
     Given que o usuário está na página inicial do site
     When o usuário clica no botão "ENTRAR"
     And o usuário clica no link "Esqueci minha senha"
-    And o usuário preenche o campo de CPF com "82576500056"
+    And o usuário preenche o campo de CPF com um CPF válido
     And o usuário apaga o conteúdo do campo de CPF
     And o usuário clica no botão "via E-mail"
     And o usuário clica no campo "Confirme seu endereço de e-mail"

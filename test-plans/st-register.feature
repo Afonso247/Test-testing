@@ -22,7 +22,7 @@ Feature: Registro de Usuário no Super Troco
 
   Scenario: Clicar em "Continuar" com o campo de CPF válido
     Given que o usuário está na página de cadastro de CPF
-    When o usuário preenche o campo de CPF com "82576500056"
+    When o usuário preenche o campo de CPF com um CPF válido
     And o usuário clica no botão "Continuar"
     Then o usuário deve ser redirecionado para a URL "https://www.supertroco.com.br/cadastro/steps/datanascimento"
 
