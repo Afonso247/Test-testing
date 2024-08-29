@@ -1,4 +1,4 @@
-Feature: Testar interações principais no site Super Troco
+Feature: Testar interações principais com 5 Casos de Teste no site Super Troco
 
   Scenario: Mostrar mensagem de erro ao inserir dado insuficiente em CPF
     Given que o usuário está na página de login
